@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        function oddFor(arr) {
+            let o = [];
+
+            for (let i = 0; i < arr.length; i++) {
+
+                if (arr[i] % 2 !== 0) {
+                    o.push(arr[i]);
+
+                }
+
+            }
+
+
+            return o;
+
+        }
+
+
+
+        function oddWhile(arr) {
+
+            let o = [], i = 0;
+
+
+            while (i < arr.length) {
+
+
+                if (arr[i] % 2 !== 0) {
+                    o.push(arr[i]); i++;
+
+
+                }
+
+
+
+            }
+
+
+
+
+            return o;
+
+
+        }
+
+
+
+        console.log(oddFor([1, 2, 3, 8, 9]));
+        
+        console.log(oddWhile([1, 2, 3, 8, 9]));
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        function removeFor(arr, val) {
+            let out = [];
+
+            for (let i = 0; i < arr.length; i++) {
+
+                    //or let index = search(val);
+                    //then remove it
+
+                if (arr[i] !== val) {
+                    out.push(arr[i]);
+                }
+
+
+
+            }
+
+
+
+            return out;
+
+
+
+        }
+
+
+
+        function removeWhile(arr, val) {
+
+
+            let out = [], i = 0;
+            
+            
+            while (i < arr.length) { 
+                
+                if (arr[i] !== val)
+                 out.push(arr[i]); i++;
+                
+                
+                } 
+            
+            
+            return out;
+
+
+
+
+        }
+
+
+
+        console.log(removeFor([1, 2, 3, 8, 9], 8));
+        
+        console.log(removeWhile([1, 2, 3, 8, 9], 8));
+
+
+    </script>
+
+</body>
+
+</html>

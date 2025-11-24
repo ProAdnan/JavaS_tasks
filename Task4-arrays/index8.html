@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+        function middleOfArray(arr) {
+
+            let mid = arr.length / 2;
+
+            if (arr.length % 2 !== 0) {
+
+
+                return arr[mid];
+
+
+            } else {
+
+
+
+                return arr[mid - 1] + " "+ arr[mid];
+
+
+
+            }
+
+
+        }
+
+
+
+        console.log(middleOfArray([1, 4, 5]));
+        
+        console.log(middleOfArray(["t", "u", "g", "x"]));
+
+
+
+    </script>
+</body>
+
+</html>

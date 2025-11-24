@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        function minFor(arr) {
+            let m = arr[0];
+
+            for (let i = 1; i < arr.length; i++) {
+
+                if (arr[i] < m) {
+                    m = arr[i];
+
+                }
+
+
+
+            }
+
+            return m;
+        }
+
+
+
+
+        function minWhile(arr) {
+
+            let m = arr[0],
+                i = 1;
+
+            while (i < arr.length) {
+
+                if (arr[i] < m)
+                    m = arr[i];
+                 i++;
+            }
+
+
+
+            return m;
+
+
+        }
+
+
+
+        console.log(minFor([1, 2, 3, 8, 9]));
+
+    
+        
+        console.log(minWhile([1, 2, 3, 8, 9]));
+
+
+
+    </script>
+</body>
+
+</html>

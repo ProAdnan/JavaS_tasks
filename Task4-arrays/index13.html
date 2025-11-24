@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+ 
+
+
+    <script>
+
+
+        function sumArrayFor(arr) {
+            let s = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                s += arr[i];
+
+            }
+            return s;
+        }
+
+        function sumArrayWhile(arr) {
+
+            let s = 0;
+            let i = 0;
+
+            while (i < arr.length) {
+                s += arr[i];
+                 i++;
+
+            }
+
+            return s;
+        }
+
+
+        console.log(sumArrayFor([1, 2, 3, 8, 9]));
+        
+        console.log(sumArrayWhile([1, 2, 3, 8, 9]));
+    </script>
+</body>
+
+</html>

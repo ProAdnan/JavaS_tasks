@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+
+        function repeatFor(str, ch) {
+
+            let c = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === ch) {
+                    c++;
+
+                }
+            }
+
+
+            return c;
+
+
+
+        }
+
+
+
+        function repeatWhile(str, ch) {
+            let c = 0, i = 0;
+
+            while (i < str.length) {
+
+
+                if (str[i] === ch) {
+                    c++;
+                }
+
+
+
+                i++;
+
+            }
+
+
+            return c;
+
+
+
+        }
+
+
+        console.log(repeatFor("alex mercer madrasa rashed2 emad hala", "a"));
+
+        console.log(repeatWhile("alex mercer madrasa rashed2 emad hala", "z"));
+    </script>
+</body>
+
+</html>

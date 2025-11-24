@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        function powerFor(arr) {
+
+            let o = [];
+
+            for (let i = 0; i < arr.length; i++) {
+                o.push(arr[i] ** i);
+
+
+            }
+
+
+            return o;
+
+
+        }
+
+        function powerWhile(arr) {
+
+
+            let o = [], i = 0;
+            
+            while (i < arr.length) {
+                
+                o.push(arr[i] ** i);
+                
+                
+                
+                i++; 
+            
+            
+            }
+            
+            
+            
+            
+            
+            
+            return o;
+
+
+
+        }
+
+
+        console.log(powerFor([44, 5, 4, 3, 2, 10]));
+
+        console.log(powerWhile([44, 5, 4, 3, 2, 10]));
+
+
+
+    </script>
+
+</body>
+
+</html>

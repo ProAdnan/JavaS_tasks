@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+     <script>
+
+
+
+        function aveFor(arr) {
+             let s = 0;
+              for (let i = 0; i < arr.length; i++){
+              s += arr[i];
+
+              }
+
+             return s / arr.length;
+            
+            
+            
+            }
+
+
+        function aveWhile(arr) {
+            
+            
+            
+            let s = 0, i = 0;
+            
+            while (i < arr.length) { 
+                
+                s += arr[i];
+                 i++;
+            
+            
+            } 
+            
+            
+            return s / arr.length;
+        
+        
+        
+        
+        }
+
+        
+        console.log(aveFor([1, 2, 3, 8, 9]));
+        
+        console.log(aveWhile([1, 2, 3, 8, 9, 77]));
+
+
+
+    </script>
+    
+</body>
+</html>
