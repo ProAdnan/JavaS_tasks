@@ -15,7 +15,7 @@
     <script>
 
 
-        function removeFor(arr, val) {
+        function removeFromArray_for(arr, val) {
             let out = [];
 
             for (let i = 0; i < arr.length; i++) {
@@ -41,7 +41,7 @@
 
 
 
-        function removeWhile(arr, val) {
+        function removeFromArray_while(arr, val) {
 
 
             let out = [], i = 0;
@@ -50,7 +50,9 @@
             while (i < arr.length) { 
                 
                 if (arr[i] !== val)
-                 out.push(arr[i]); i++;
+                 out.push(arr[i]);
+                
+                 i++;
                 
                 
                 } 
@@ -65,9 +67,9 @@
 
 
 
-        console.log(removeFor([1, 2, 3, 8, 9], 8));
+        console.log(removeFromArray_for([1, 2, 3, 8, 9], 8));
         
-        console.log(removeWhile([1, 2, 3, 8, 9], 8));
+        console.log(removeFromArray_while([1, 2, 3, 8, 9], 8));
 
 
     </script>
